@@ -20,3 +20,8 @@
 - JWT
   - header
   - payload
+
+#### Database
+
+- MySQL
+- MongoDB
