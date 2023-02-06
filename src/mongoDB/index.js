@@ -17,6 +17,20 @@ app.get("/", (req, res) => {
   `);
 });
 
+app.set("views", path.join(__dirname, "/views/"));
+
+app.engine(
+  "hbs",
+  exphbs({
+    handlebars: allowInsecurePrototypeAcccess(handlebars),
+    extname: "hbs",
+    defaultLayout: "MainLayout",
+    layoutsDir: __dirname + "/views/layouts/",
+  })
+);
+
+app.set("view engine", "hbs");
+
 app.listen(8000, () => {
   console.log("server started at port 8000");
 });
