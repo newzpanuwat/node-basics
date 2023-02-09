@@ -25,3 +25,8 @@
 
 - MySQL
 - MongoDB
+
+### Typescripts
+
+- Node with typescript
+- Typescript with react
